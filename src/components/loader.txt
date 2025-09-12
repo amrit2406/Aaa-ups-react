@@ -1,0 +1,103 @@
+import { motion } from "framer-motion";
+
+export default function PowerCoreLoader() {
+  const coreVariants = {
+    animate: {
+      scale: [0.8, 1, 0.8],
+      opacity: [0.5, 1, 0.5],
+      transition: {
+        repeat: Infinity,
+        duration: 2,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  const ringVariants = {
+    animate: {
+      rotate: 360,
+      opacity: [0.2, 0.5, 0.2],
+      transition: {
+        repeat: Infinity,
+        duration: 8,
+        ease: "linear",
+      },
+    },
+  };
+
+  const sparkVariants = {
+    animate: {
+      pathLength: [0, 1],
+      opacity: [0.1, 1, 0.1],
+      transition: {
+        repeat: Infinity,
+        duration: 1.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  return (
+    <div className="fixed inset-0 flex flex-col items-center justify-center bg-gray-950 text-white z-50">
+      <div className="relative w-48 h-48 flex items-center justify-center">
+        {/* Outer Ring */}
+        <motion.div
+          className="absolute w-48 h-48 rounded-full border-2 border-blue-600/30"
+          variants={ringVariants}
+          animate="animate"
+          style={{ transition: "all" }} // Ensure smooth rotation
+        />
+        {/* Inner Ring */}
+        <motion.div
+          className="absolute w-36 h-36 rounded-full border-2 border-purple-600/40"
+          variants={ringVariants}
+          animate="animate"
+          style={{ transition: "all", animationDuration: "10s", animationDirection: "reverse" }} // Slower, opposite rotation
+        />
+        {/* Power Core */}
+        <motion.div
+          className="absolute w-24 h-24 rounded-full bg-blue-500/50 blur-xl"
+          variants={coreVariants}
+          animate="animate"
+        />
+        <motion.div
+          className="w-16 h-16 rounded-full bg-blue-400"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        />
+        {/* Spark Trail SVG (A more complex path for a cool effect) */}
+        <svg
+          className="absolute w-full h-full"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <motion.path
+            d="M 50,20 A 30,30 0 1,1 50,80 A 30,30 0 1,1 50,20" // Circular path
+            stroke="url(#spark-gradient)"
+            strokeWidth="3"
+            fill="none"
+            variants={sparkVariants}
+            animate="animate"
+          />
+          <defs>
+            <linearGradient id="spark-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style={{ stopColor: "rgb(255,255,255)", stopOpacity: 0 }} />
+              <stop offset="50%" style={{ stopColor: "rgb(129,140,248)", stopOpacity: 1 }} />
+              <stop offset="100%" style={{ stopColor: "rgb(255,255,255)", stopOpacity: 0 }} />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <motion.p
+        className="mt-12 text-xl sm:text-2xl font-light text-gray-400 tracking-wider"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
+        <span className="text-blue-400">Energizing</span> your experience...
+      </motion.p>
+    </div>
+  );
+}
