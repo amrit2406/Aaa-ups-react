@@ -134,7 +134,7 @@ export default function WhyChooseUs() {
         >
           {[
             { number: "5000+", label: "Happy Clients", color: "blue" },
-            { number: "15+", label: "Years Experience", color: "green" },
+            { number: "20+", label: "Years Experience", color: "green" },
             { number: "98%", label: "Satisfaction Rate", color: "red" },
             { number: "24/7", label: "Support", color: "amber" }
           ].map((stat, index) => (

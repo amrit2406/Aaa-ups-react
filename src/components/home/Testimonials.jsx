@@ -13,51 +13,51 @@ import "swiper/css/pagination";
 const testimonials = [
   {
     id: 1,
-    name: "Rahul Sharma",
-    title: "CEO, TechCorp",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    name: "Abhisek Agarwal ",
+    title: "Founder, OGA Homes",
+    image: "https://ogahome.in/wp-content/uploads/2023/12/oga-logo-png-300x64.png",
     rating: 5,
-    text: "AAA UPS provided us with reliable power solutions that keep our operations running smoothly. Excellent support and exceptional service!",
+    text: "OGA HOMES appreciates the exceptional service in selecting online UPS systems. Their extensive product knowledge (1 KVA to 1000 KVA) made the process seamless, offering tailored solutions. We thank them for their prompt, professional service and genuine customer care.",
   },
   {
     id: 2,
-    name: "Anita Verma",
-    title: "Manager, Green Energy Pvt Ltd",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face",
+    name: "A.P. Das",
+    title: "Founder, Cineteek Technology",
+    image: "https://img1.wsimg.com/isteam/ip/f7d85c85-916f-4afb-9e47-8fd55fb0bb48/CT-Logo-New.png/:/rs=w:288,h:288,cg:true,m/cr=w:288,h:288/qt=q:95",
     rating: 5,
-    text: "The solar battery solutions from AAA UPS are top-notch and incredibly efficient. Their expertise made our transition seamless!",
+    text: "Cineteek Technology considers AAA UPS an exceptional support partner. They consistently deliver outstanding service and support, meeting our needs with professionalism and efficiency. AAA UPS's innovative solutions have been pivotal to our growth, and we wholeheartedly recommend them.",
   },
   {
     id: 3,
-    name: "Deepak Reddy",
-    title: "Engineer, Delta Systems",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face",
+    name: "Santosh Senapati",
+    title: "Founder, Rainbow Assets",
+    image: "https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg",
     rating: 4,
-    text: "Fast delivery and genuine products. AAA UPS is our trusted partner for all UPS and inverter needs. Professional team!",
+    text: "Rainbow Assets is extremely pleased with the exceptional service from Mr. Subrat Panigrahy at AAA Ups Enterprise. He provided a high-quality, affordable UPS for our office, with prompt delivery and seamless installation. We highly recommend Mr. Subrat and AAA Ups for reliable UPS solutions and outstanding service.",
   },
   {
     id: 4,
-    name: "Meena Kapoor",
-    title: "Homeowner",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+    name: "Soumeek Samal",
+    title: "Founder cum owner, Trading Company",
+    image: "https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg",
     rating: 5,
-    text: "The battery backup solutions are excellent and have saved us during multiple power outages. Couldn't be happier with the service!",
+    text: "AAA Enterprises, represented by Mr. Subrat Panigrahi, provided exceptional service and expertise. They quickly understood our needs, delivered the perfect UPS solution, and at a very economical price. Highly recommended for all UPS services!",
   },
   {
     id: 5,
-    name: "Vikram Singh",
-    title: "IT Director, Nexus Solutions",
-    image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=150&h=150&fit=crop&crop=face",
+    name: "Sandeep Biswal",
+    title: "Founder, Equifirst Fincorp",
+    image: "https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg",
     rating: 5,
-    text: "Outstanding reliability and 24/7 support. AAA UPS ensures our critical systems never go down during power fluctuations.",
+    text: "AAA UPS has been an exceptional support partner for Equifirst Fincorp. They consistently deliver outstanding service, prompt responses, and innovative solutions. We highly recommend them for any business seeking unparalleled service excellence.",
   },
   {
     id: 6,
-    name: "Priya Patel",
-    title: "Business Owner",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
+    name: "Pradeep Dash",
+    title: "Founder, Think Digital",
+    image: "https://thinkdigital.co.in/wp-content/uploads/2023/02/td-logo-copy.png",
     rating: 4,
-    text: "The consultation process was thorough, and they helped me choose the perfect solution for my business needs. Highly recommend!",
+    text: "AAA Ups Enterprise has been an exceptional support partner for Think Digital. They consistently deliver outstanding service and innovative solutions with professionalism and efficiency. We wholeheartedly recommend them for any business seeking unparalleled service excellence.",
   },
 ];
 
@@ -212,7 +212,7 @@ export default function Testimonials() {
                             <img
                               src={testimonial.image}
                               alt={testimonial.name}
-                              className="w-full h-full object-cover"
+                              className="w-full h-full object-contain"
                             />
                           </div>
                           <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
@@ -247,7 +247,7 @@ export default function Testimonials() {
             { number: "5000+", label: "Happy Clients" },
             { number: "99%", label: "Satisfaction Rate" },
             { number: "24/7", label: "Support Available" },
-            { number: "15+", label: "Years Experience" }
+            { number: "20+", label: "Years Experience" }
           ].map((stat, index) => (
             <div key={index} className="p-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20">
               <div className="text-3xl font-bold text-gray-900 mb-2 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">

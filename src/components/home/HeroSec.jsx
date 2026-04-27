@@ -3,10 +3,13 @@ import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { FiArrowRight, FiZap } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import abt from "../../assets/hero.png";
 
 const Hero = () => {
   const controls = useAnimation();
+  // Motion-wrapped Link
+  const MotionLink = motion(Link);
 
   useEffect(() => {
     // Animate main floating scale in a loop
@@ -21,7 +24,7 @@ const Hero = () => {
   }, [controls]);
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden px-6 sm:px-12 lg:px-24 xl:px-40">
+    <section className="relative bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden px-6 sm:px-12 lg:px-24">
       {/* Animated background orbs with soft glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-blue-600 mix-blend-screen filter blur-3xl opacity-30 animate-float1"></div>
@@ -56,7 +59,7 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto h-full flex flex-col md:flex-row items-center relative z-20 py-28 md:py-32 lg:py-20">
+      <div className="w-full max-w-7xl mx-auto h-full flex flex-col md:flex-row items-center relative z-20 py-28 md:py-32 lg:py-20">
         {/* Left content */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -126,7 +129,8 @@ const Hero = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-6"
           >
-            <motion.button
+            <MotionLink
+              to="/contact"
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 15px 30px -8px rgba(239, 68, 68, 0.5)",
@@ -136,15 +140,16 @@ const Hero = () => {
             >
               Get Free Consultation
               <FiArrowRight className="ml-3 text-xl" />
-            </motion.button>
+            </MotionLink>
 
-            <motion.button
+            <MotionLink
+              to="/products"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.96 }}
               className="border-2 border-white/30 hover:border-white/70 text-white px-8 py-4 rounded-lg font-bold text-lg transition hover:bg-white/10"
             >
               Explore Products
-            </motion.button>
+            </MotionLink>
           </motion.div>
         </motion.div>
 
@@ -221,7 +226,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.3 }}
-        className="absolute bottom-14 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-6 left-1/2 transform -translate-x-1/2"
       >
         <div className="animate-bounce flex flex-col items-center select-none">
           <div className="text-white text-sm mb-1 font-mono tracking-widest opacity-80">

@@ -1,7 +1,8 @@
 // src/components/AboutPage.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import { FiTarget, FiZap, FiUsers } from "react-icons/fi"; // Using react-icons for values
+import { FiTarget, FiZap, FiUsers } from "react-icons/fi"; 
+import { Link } from "react-router-dom";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -488,20 +489,25 @@ const AboutPage = () => {
           Partner with us for a brighter, more reliable future. Contact our
           experts today for a tailored consultation.
         </motion.p>
-        <motion.button
-          className="relative z-10 bg-red-600 hover:bg-red-700 focus-visible:ring-4 focus-visible:ring-red-500 focus:outline-none text-white font-bold py-4 px-10 rounded-lg shadow-xl transition transform hover:-translate-y-1"
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 15px 30px -8px rgba(239, 68, 68, 0.5)",
-          }}
-          whileTap={{ scale: 0.95 }}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          Get a Free Consultation
-        </motion.button>
+        <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: 0.4 }}
+>
+  <Link to="/contact"> {/* Replace with your route */}
+    <motion.button
+      className="relative z-10 bg-red-600 hover:bg-red-700 focus-visible:ring-4 focus-visible:ring-red-500 focus:outline-none text-white font-bold py-4 px-10 rounded-lg shadow-xl transition transform hover:-translate-y-1"
+      whileHover={{
+        scale: 1.05,
+        boxShadow: "0 15px 30px -8px rgba(239, 68, 68, 0.5)",
+      }}
+      whileTap={{ scale: 0.95 }}
+    >
+      Get a Free Consultation
+    </motion.button>
+  </Link>
+</motion.div>
       </section>
 
       {/* Global styles for blob animations */}

@@ -9,7 +9,7 @@ const brands = [
   { name: "Luminous", img: "https://lumprodsta.blob.core.windows.net/prodcontainer/assets/icons/LuminousLogoBlue.webp", href: "https://www.luminousindia.com/" },
   { name: "Delta", img: "https://www.deltaww.com/images/logo.svg", href: "https://www.deltaww.com/en-US/index" },
   { name: "Exide", img: "https://docs.exideindustries.com/images/logo.png", href: "https://www.exideindustries.com/" },
-  { name: "Su-Kam", img: "https://www.su-kam.com/wp-content/uploads/2024/06/Untitled-design.png", href: "https://www.su-kam.com/" },
+  { name: "Frontech", img: "https://frontechonline.com/cdn/shop/files/Frontech_Logo_without_bg.png?v=1709901774&width=150", href: "https://frontechonline.com/" },
 ];
 
 export default function Brands() {

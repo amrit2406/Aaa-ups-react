@@ -82,7 +82,12 @@ export default function AboutSection() {
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              At <span className="text-sky-400 font-bold">AAA UPS</span>, we’re
+              At 
+              <span className="text-red-400 font-bold"> AAA </span>
+              <span className="text-blue-600 font-bold"> U</span>
+              <span className="text-green-600 font-bold">P</span>
+              <span className="text-red-400 font-bold">S</span>
+              , we’re
               revolutionizing power backup & solar solutions in India. With a
               decade of experience, world-class partnerships, and a drive for
               sustainability, we bring reliable energy to homes and
@@ -104,7 +109,7 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <span className="text-lg font-semibold text-white">
-                    10+ Years
+                    20+ Years
                   </span>
                   <p className="text-gray-400 leading-none">
                     industry experience

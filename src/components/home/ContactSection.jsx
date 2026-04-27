@@ -1,8 +1,15 @@
 // src/components/ContactSection.jsx
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiMail, FiPhone, FiMapPin, FiSend, FiMessageCircle, FiClock } from "react-icons/fi";
-import con from "../../assets/contact.png"
+import {
+  FiMail,
+  FiPhone,
+  FiMapPin,
+  FiSend,
+  FiMessageCircle,
+  FiClock,
+} from "react-icons/fi";
+import con from "../../assets/contact.png";
 
 export default function ContactSection() {
   const [form, setForm] = useState({
@@ -27,18 +34,31 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative py-28 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 overflow-hidden">
+    <section
+      id="contact"
+      className="relative py-28 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 overflow-hidden"
+    >
       {/* Animated background elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute -top-40 -left-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float-slow"></div>
         <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float-slower"></div>
-        
+
         {/* Grid pattern */}
         <div className="absolute inset-0 opacity-10">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="currentColor" strokeWidth="1" />
+              <pattern
+                id="grid"
+                width="50"
+                height="50"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M 50 0 L 0 0 0 50"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#grid)" />
@@ -64,23 +84,28 @@ export default function ContactSection() {
             <FiMessageCircle className="w-4 h-4 mr-2" />
             Get In Touch
           </motion.div>
-          
+
           <motion.h2
             className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Connect</span>
+            Let's{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              Connect
+            </span>
           </motion.h2>
-          
+
           <motion.p
             className="text-xl text-gray-600 max-w-3xl mx-auto font-light"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Reach out for product queries, custom solutions, or just to say hello — we're here to respond swiftly and help you find the perfect power solution.
+            Reach out for product queries, custom solutions, or just to say
+            hello — we're here to respond swiftly and help you find the perfect
+            power solution.
           </motion.p>
         </motion.div>
 
@@ -258,7 +283,8 @@ export default function ContactSection() {
                     Message Sent Successfully!
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Thank you for reaching out. We'll get back to you within 24 hours.
+                    Thank you for reaching out. We'll get back to you within 24
+                    hours.
                   </p>
                   <motion.button
                     whileHover={{ scale: 1.05 }}
@@ -293,25 +319,25 @@ export default function ContactSection() {
                     icon: FiMail,
                     color: "text-blue-500",
                     bg: "bg-blue-500/10",
-                    href: "mailto:support@aaaups.com",
-                    label: "support@aaaups.com",
-                    title: "Email Us"
+                    href: "mailto:info@aaaups.in",
+                    label: "info@aaaups.in",
+                    title: "Email Us",
                   },
                   {
                     icon: FiPhone,
                     color: "text-green-500",
                     bg: "bg-green-500/10",
-                    href: "tel:+919000000000",
-                    label: "+91 90000 00000",
-                    title: "Call Us"
+                    href: "tel:+916371499910",
+                    label: "+91 6371499910",
+                    title: "Call Us",
                   },
                   {
                     icon: FiMapPin,
                     color: "text-red-500",
                     bg: "bg-red-500/10",
-                    href: "#",
-                    label: "New Delhi, India",
-                    title: "Visit Us"
+                    // href: "#",
+                    label: "Bhubaneswar, Odisha, India",
+                    title: "Visit Us",
                   },
                   // {
                   //   icon: FiClock,
@@ -330,11 +356,15 @@ export default function ContactSection() {
                     transition={{ duration: 0.7, delay: index * 0.1 }}
                     className="flex items-center gap-3 group cursor-pointer p-4 rounded-xl hover:bg-white/50 transition-all"
                   >
-                    <div className={`w-14 h-14 rounded-xl ${item.bg} flex items-center justify-center ${item.color} group-hover:scale-110 transition-transform`}>
+                    <div
+                      className={`w-14 h-14 rounded-xl ${item.bg} flex items-center justify-center ${item.color} group-hover:scale-110 transition-transform`}
+                    >
                       <item.icon className="w-6 h-6" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-500 font-medium">{item.title}</p>
+                      <p className="text-sm text-gray-500 font-medium">
+                        {item.title}
+                      </p>
                       <a
                         href={item.href}
                         className="text-lg text-gray-800 font-semibold hover:text-gradient hover:from-blue-600 hover:to-purple-600 transition-all"
@@ -359,14 +389,24 @@ export default function ContactSection() {
                 <img
                   src={con}
                   alt="Our Support Team"
-                  className="w-full h-auto object-cover transform transition-transform duration-700"
+                  className="
+        w-full
+        h-[250px] sm:h-[350px] md:h-[450px] lg:h-[550px]
+        object-cover md:object-center
+        object-top
+        transform transition-transform duration-700
+      "
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent"></div>
-                
+
                 {/* Overlay content */}
-                <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
-                  <h3 className="text-2xl font-bold text-white mb-2">Expert Support Team</h3>
-                  <p className="text-white/80">Ready to assist you 24/7 with professional guidance</p>
+                <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 p-4 md:p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
+                  <h3 className="text-lg md:text-2xl font-bold text-white mb-1 md:mb-2">
+                    Expert Support Team
+                  </h3>
+                  <p className="text-sm md:text-base text-white/80">
+                    Ready to assist you 24/7 with professional guidance
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -377,16 +417,30 @@ export default function ContactSection() {
       {/* Global styles for animations */}
       <style jsx global>{`
         @keyframes float-slow {
-          0%, 100% { transform: translate(0, 0) rotate(0deg); }
-          50% { transform: translate(-20px, -20px) rotate(1deg); }
+          0%,
+          100% {
+            transform: translate(0, 0) rotate(0deg);
+          }
+          50% {
+            transform: translate(-20px, -20px) rotate(1deg);
+          }
         }
         @keyframes float-slower {
-          0%, 100% { transform: translate(0, 0) rotate(0deg); }
-          50% { transform: translate(15px, -15px) rotate(-1deg); }
+          0%,
+          100% {
+            transform: translate(0, 0) rotate(0deg);
+          }
+          50% {
+            transform: translate(15px, -15px) rotate(-1deg);
+          }
         }
-        .animate-float-slow { animation: float-slow 15s ease-in-out infinite; }
-        .animate-float-slower { animation: float-slower 18s ease-in-out infinite; }
-        
+        .animate-float-slow {
+          animation: float-slow 15s ease-in-out infinite;
+        }
+        .animate-float-slower {
+          animation: float-slower 18s ease-in-out infinite;
+        }
+
         .text-gradient {
           background-clip: text;
           -webkit-background-clip: text;

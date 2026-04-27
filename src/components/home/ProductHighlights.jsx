@@ -1,37 +1,64 @@
 // src/components/ProductShowcase.jsx
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import c1 from "../../assets/amazecom1.png";
+import a1 from "../../assets/apcoffline2.png";
+import a2 from "../../assets/apcoffline4.png";
+import b1 from "../../assets/amazeB1.png";
+import b2 from "../../assets/amazeB2.png";
+import a3 from "../../assets/amaze1.png";
+import a4 from "../../assets/amaze2.png";
 
 const products = [
   {
     id: 1,
-    name: "APC UPS 850VA",
+    name: "AN 1075+ with Amaze 2160TT",
     description: "Reliable UPS for home and small office.",
-    price: 4999,
-    image: "/products/apc-ups-850va.png",
+    price: 27800,
+    image: c1,
   },
   {
     id: 2,
-    name: "Amaze Inverter 1200W",
-    description: "Efficient inverter with LED display.",
-    price: 8999,
-    image: "/products/amaze-inverter-1200w.png",
+    name: "APC Back-UPS, BX600I-IN",
+    description: "600VA/360W compact tower Back-UPS",
+    price: 3990,
+    image: a1,
   },
   {
     id: 3,
-    name: "Luminous Tubular Battery 150Ah",
-    description: "Long-lasting tubular battery for continuous power.",
-    price: 11200,
-    image: "/products/luminous-battery-150ah.png",
+    name: "APC Back-UPS, BX1100I-IN",
+    description: "1100VA/660W compact tower Back-UPS",
+    price: 8999,
+    image: a2,
   },
   {
     id: 4,
-    name: "Delta Solar Grid System",
-    description: "Comprehensive solar grid hybrid system.",
-    price: 55999,
-    image: "/products/delta-solar-grid.png",
+    name: "AMAZE 5460TT",
+    description: "Capacity – 250 Ah",
+    price: 29100,
+    image: b1,
   },
-  // Add more as needed
+  {
+    id: 5,
+    name: "Amaze 5266TT",
+    description: "Capacity – 220 Ah",
+    price: 27100,
+    image: b2,
+  },
+  {
+    id: 6,
+    name: "Amaze AN 4500+",
+    description: "Capacity – 4000VA / 36V",
+    price: 70000,
+    image: a3,
+  },
+  {
+    id: 7,
+    name: "AN 1075+",
+    description: "Capacity – 900VA",
+    price: 9200,
+    image: a4,
+  },
 ];
 
 export default function ProductShowcase() {
@@ -62,17 +89,40 @@ export default function ProductShowcase() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    if (sending) return;
-    setSending(true);
+  e.preventDefault();
+  if (sending) return;
+  setSending(true);
 
-    setTimeout(() => {
-      setSending(false);
-      setSuccess(true);
-      setFormData({ name: "", phone: "", email: "", message: "" });
-      setTimeout(handleClose, 2500);
-    }, 1700);
-  };
+  // WhatsApp number (your business number in international format, no + or spaces)
+  const whatsappNumber = "919090299910"; // change to your number
+
+  // Create message
+  const message = `📩 New Product Enquiry
+  
+🛒 Product: ${selectedProduct?.name}
+👤 Name: ${formData.name}
+📞 Phone: ${formData.phone}
+✉️ Email: ${formData.email}
+💬 Message: ${formData.message || "N/A"}`;
+
+  // Encode message for URL
+  const encodedMessage = encodeURIComponent(message);
+
+  // WhatsApp API link
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+  // Open WhatsApp in new tab
+  window.open(whatsappLink, "_blank");
+
+  // Reset states like before
+  setTimeout(() => {
+    setSending(false);
+    setSuccess(true);
+    setFormData({ name: "", phone: "", email: "", message: "" });
+    setTimeout(handleClose, 2500);
+  }, 1700);
+};
+
 
   return (
     <section
@@ -90,14 +140,14 @@ export default function ProductShowcase() {
           Our Best-Selling Solutions
         </motion.h2>
 
-        {/* Carousel on desktop – Scrollable grid on mobile */}
-        <div className="flex gap-6 overflow-x-auto pb-4 sm:gap-10 md:grid md:grid-cols-4 md:overflow-visible md:gap-12">
+        {/* Responsive grid layout */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 md:gap-12">
           {products.map((product, i) => (
             <motion.div
               key={product.id}
-              className={`bg-white/90 border border-sky-100 rounded-3xl shadow-xl p-7 flex flex-col md:min-w-0 min-w-[320px] ${
+              className={`bg-white/90 border border-sky-100 rounded-3xl shadow-xl p-5 flex flex-col ${
                 i === 0
-                  ? "md:col-span-2 bg-gradient-to-br from-sky-50 to-white border-2 border-sky-300 shadow-2xl"
+                  ? "lg:col-span-2 bg-gradient-to-br from-sky-50 to-white border-2 border-sky-300 shadow-2xl"
                   : ""
               }`}
               initial={{ opacity: 0, scale: 0.97, y: 20 }}
@@ -124,10 +174,16 @@ export default function ProductShowcase() {
                   loading="lazy"
                 />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-neutral-900 mb-2">{product.name}</h3>
-              <p className="text-slate-600 text-sm md:text-base">{product.description}</p>
+              <h3 className="text-lg md:text-xl font-bold text-neutral-900 mb-2">
+                {product.name}
+              </h3>
+              <p className="text-slate-600 text-sm md:text-base">
+                {product.description}
+              </p>
               <div className="flex items-center justify-between mt-7">
-                <span className="text-sky-700 font-bold text-lg">₹{product.price}</span>
+                <span className="text-sky-700 font-bold text-lg">
+                  ₹{product.price}
+                </span>
                 <motion.button
                   whileHover={{
                     scale: 1.08,
@@ -322,7 +378,7 @@ export default function ProductShowcase() {
   );
 }
 
-// Reuse the modal animation variants from your previous setup:
+// Reuse the modal animation variants
 const modalBackdrop = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },

@@ -1,6 +1,7 @@
 // src/components/BrandsPage.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const brands = [
   {
@@ -45,10 +46,10 @@ const brands = [
   },
   {
     id: 7,
-    name: "Su-Kam",
-    logo: "https://www.su-kam.com/wp-content/uploads/2024/06/Untitled-design.png",
+    name: "Frontech",
+    logo: "https://frontechonline.com/cdn/shop/files/Frontech_Logo_without_bg.png?v=1709901774&width=150",
     description:
-      "A pioneer in solar and power solutions for home and industrial use.",
+      "A pioneer in ups and power solutions for home and industrial use.",
   },
   // {
   //   id: 8,
@@ -469,15 +470,15 @@ const BrandsPage = () => {
               />
             </div>
             <div className="w-full md:w-2/3 text-center md:text-left">
-              <h3 className="text-3xl font-bold mb-3">
-                Amaze
-              </h3>
+              <h3 className="text-3xl font-bold mb-3">Amaze</h3>
               <p className="text-gray-300 leading-relaxed">
-                As a premier partner, we offer a comprehensive range of APC
-                products, from home backup units to enterprise-grade data center
-                solutions. APC is recognized globally for its industry-leading
-                reliability and innovation, ensuring your critical power needs
-                are always met.
+                As an authorized partner, we provide a complete range of Amaze
+                power solutions designed for homes, offices, and commercial
+                applications. From high-performance inverters and batteries,
+                Amaze is known for its durability, efficiency, and cutting-edge
+                technology. With a strong commitment to quality and reliability,
+                Amaze ensures uninterrupted power and long-lasting performance
+                for all your energy needs.
               </p>
             </div>
           </motion.div>
@@ -551,20 +552,27 @@ const BrandsPage = () => {
           Our specialists can guide you through our product offerings to find
           the perfect solution for your needs.
         </motion.p>
-        <motion.button
-          className="relative z-10 bg-red-600 hover:bg-red-700 focus-visible:ring-4 focus-visible:ring-red-500 focus:outline-none text-white font-bold py-4 px-10 rounded-lg shadow-xl transition transform hover:-translate-y-1"
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 15px 30px -8px rgba(239, 68, 68, 0.5)",
-          }}
-          whileTap={{ scale: 0.95 }}
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Contact Our Team
-        </motion.button>
+          <Link to="/contact">
+            {" "}
+            {/* Replace with your route */}
+            <motion.button
+              className="relative z-10 bg-red-600 hover:bg-red-700 focus-visible:ring-4 focus-visible:ring-red-500 focus:outline-none text-white font-bold py-4 px-10 rounded-lg shadow-xl transition transform hover:-translate-y-1"
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 15px 30px -8px rgba(239, 68, 68, 0.5)",
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Contact Our Team
+            </motion.button>
+          </Link>
+        </motion.div>
       </section>
     </div>
   );

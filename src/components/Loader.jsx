@@ -37,6 +37,18 @@ export default function PowerLoader() {
 
   const nodes = generateNodes();
 
+  // Calculate position for the moving point
+  const calculatePointPosition = (progress) => {
+    // Start at the top (12 o'clock position) and move clockwise
+    const angle = (progress / 100) * Math.PI * 2 - Math.PI / 2;
+    const radius = 100;
+    const x = 100 + Math.cos(angle) * radius;
+    const y = 100 + Math.sin(angle) * radius;
+    return { x, y };
+  };
+
+  const pointPosition = calculatePointPosition(loadingProgress);
+
   // Animation variants
   const containerVariants = {
     initial: { opacity: 0 },
@@ -219,6 +231,22 @@ export default function PowerLoader() {
                 animate="animate"
               />
               
+              {/* Progress path - will be filled as loading progresses */}
+              <motion.circle
+                cx="100"
+                cy="100"
+                r="100"
+                fill="none"
+                stroke="rgba(72, 187, 120, 0.6)"
+                strokeWidth="2"
+                strokeDasharray="628.32" // 2 * π * 100
+                strokeDashoffset={628.32 - (628.32 * loadingProgress) / 100}
+                transform="rotate(-90 100 100)" // Start from top
+                initial={{ strokeDashoffset: 628.32 }}
+                animate={{ strokeDashoffset: 628.32 - (628.32 * loadingProgress) / 100 }}
+                transition={{ duration: 0.3 }}
+              />
+              
               {/* Grid nodes */}
               {nodes.map((node) => (
                 <motion.circle
@@ -242,6 +270,54 @@ export default function PowerLoader() {
                 variants={nodeVariants}
                 initial="initial"
                 animate="animate"
+              />
+              
+              {/* Moving point that completes the circle */}
+              <motion.circle
+                cx={pointPosition.x}
+                cy={pointPosition.y}
+                r="8"
+                fill="rgba(72, 187, 120, 1)"
+                className="shadow-lg shadow-green-500/50"
+                initial={{ scale: 0 }}
+                animate={{ 
+                  scale: [0, 1.2, 1],
+                  cx: pointPosition.x,
+                  cy: pointPosition.y
+                }}
+                transition={{ 
+                  scale: { duration: 0.5 },
+                  cx: { type: "spring", stiffness: 300, damping: 20 },
+                  cy: { type: "spring", stiffness: 300, damping: 20 }
+                }}
+              />
+              
+              {/* Glow effect for the moving point */}
+              <motion.circle
+                cx={pointPosition.x}
+                cy={pointPosition.y}
+                r="12"
+                fill="rgba(72, 187, 120, 0.3)"
+                animate={{ 
+                  cx: pointPosition.x,
+                  cy: pointPosition.y,
+                  scale: [1, 1.5, 1],
+                  opacity: [0.3, 0.6, 0.3]
+                }}
+                transition={{ 
+                  scale: { 
+                    repeat: Infinity, 
+                    duration: 1.5,
+                    ease: "easeInOut"
+                  },
+                  opacity: { 
+                    repeat: Infinity, 
+                    duration: 1.5,
+                    ease: "easeInOut"
+                  },
+                  cx: { type: "spring", stiffness: 300, damping: 20 },
+                  cy: { type: "spring", stiffness: 300, damping: 20 }
+                }}
               />
             </svg>
           </div>

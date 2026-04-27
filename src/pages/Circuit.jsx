@@ -324,9 +324,9 @@ const CircuitPage = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            Inverter{" "}
+            Microgrid{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-red-400">
-              Power
+              Simulation
             </span>
           </motion.h1>
           <motion.p

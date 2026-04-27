@@ -572,7 +572,8 @@ const ContactPage = () => {
                   <h4 className="font-bold text-lg text-neutral-900 mb-1">
                     Phone
                   </h4>
-                  <p className="text-neutral-600">+91 98765 43210</p>
+                  <p className="text-neutral-600">+91 6371499910</p>
+                  <p className="text-neutral-600">+91 9090299910</p>
                 </div>
               </motion.div>
 
@@ -590,7 +591,7 @@ const ContactPage = () => {
                   <h4 className="font-bold text-lg text-neutral-900 mb-1">
                     Email
                   </h4>
-                  <p className="text-neutral-600">contact@powersolutions.com</p>
+                  <p className="text-neutral-600">info@aaaups.in</p>
                 </div>
               </motion.div>
 
@@ -609,8 +610,7 @@ const ContactPage = () => {
                     Address
                   </h4>
                   <p className="text-neutral-600">
-                    401, Main Street, <br />
-                    Bhubaneswar, Odisha, India 751001
+                    Sahid Nagar, Bhubaneswar, Odisha
                   </p>
                 </div>
               </motion.div>
@@ -651,7 +651,7 @@ const ContactPage = () => {
             {/* Embedded Google Map */}
             <iframe
               title="Google Map Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.618641470477!2d85.82025117462473!3d20.27892181363717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190987c9381559%3A0xc6c4f0b2f5c7173b!2sInfocity%2C%20Bhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1691234567890!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.9606323703574!2d85.8417037750602!3d20.29455868117744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19095f6e3b5f33%3A0x4ab0c24835fd5cb3!2sAaa%20Ups%20Enterprise%20pvt%20ltd!5e1!3m2!1sen!2sin!4v1758465708075!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

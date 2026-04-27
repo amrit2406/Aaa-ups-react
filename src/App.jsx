@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
@@ -10,6 +10,7 @@ import ContactPage from "./pages/Contact";
 import CircuitPage from "./pages/Circuit";
 import SolarSolutionsPage from "./pages/SolarP";
 import PowerLoader from "./components/Loader";
+import ScrollToTop from "./components/Scrolltotop";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -25,7 +26,8 @@ export default function App() {
   }
 
   return (
-    <HashRouter>
+    <Router>
+      <ScrollToTop />
       <Navbar />
       <main className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-green-50">
         <Routes>
@@ -39,6 +41,6 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
-    </HashRouter>
+    </Router>
   );
 }

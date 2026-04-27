@@ -39,7 +39,7 @@ export default function FAQ() {
   };
 
   return (
-    <main className="min-h-screen relative overflow-hidden bg-gray-950 text-gray-200 py-16 md:py-24">
+    <main className="relative overflow-hidden bg-gray-950 text-gray-200 py-16 md:py-24">
       {/* Background */}
       <div className="absolute inset-0 opacity-40">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800" />

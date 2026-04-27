@@ -365,8 +365,7 @@ const products = [
   {
     id: 30,
     name: "Amaze AN 4500+",
-    description:
-      "Capacity – 4000VA / 36V",
+    description: "Capacity – 4000VA / 36V",
     price: 70000,
     image: a30,
     category: "Inverter",
@@ -374,8 +373,7 @@ const products = [
   {
     id: 31,
     name: "AMAZE AN STAR 3875",
-    description:
-      "Capacity – 3.5kVA /36V",
+    description: "Capacity – 3.5kVA /36V",
     price: 34490,
     image: a31,
     category: "Inverter",
@@ -383,8 +381,7 @@ const products = [
   {
     id: 32,
     name: "AMAZE AN STAR 2375",
-    description:
-      "Capacity – 2kVA /24V",
+    description: "Capacity – 2kVA /24V",
     price: 19500,
     image: a32,
     category: "Inverter",
@@ -392,8 +389,7 @@ const products = [
   {
     id: 33,
     name: "Amaze AN 1575+",
-    description:
-      "Capacity – 1400VA",
+    description: "Capacity – 1400VA",
     price: 10500,
     image: a33,
     category: "Inverter",
@@ -401,8 +397,7 @@ const products = [
   {
     id: 34,
     name: "Amaze AN 1675+",
-    description:
-      "Capacity – 1500VA",
+    description: "Capacity – 1500VA",
     price: 10800,
     image: a34,
     category: "Inverter",
@@ -410,8 +405,7 @@ const products = [
   {
     id: 35,
     name: "AQ 1275+",
-    description:
-      "Capacity – 1100VA / 12V",
+    description: "Capacity – 1100VA / 12V",
     price: 10000,
     image: a35,
     category: "Inverter",
@@ -419,8 +413,7 @@ const products = [
   {
     id: 36,
     name: "AN Digital 1475",
-    description:
-      "Capacity – 1100VA",
+    description: "Capacity – 1100VA",
     price: 10000,
     image: a36,
     category: "Inverter",
@@ -428,8 +421,7 @@ const products = [
   {
     id: 37,
     name: "AN 1275 Pro",
-    description:
-      "Capacity – 1100VA",
+    description: "Capacity – 1100VA",
     price: 10000,
     image: a37,
     category: "Inverter",
@@ -437,8 +429,7 @@ const products = [
   {
     id: 38,
     name: "AN 1075+",
-    description:
-      "Capacity – 900VA",
+    description: "Capacity – 900VA",
     price: 9200,
     image: a38,
     category: "Inverter",
@@ -446,8 +437,7 @@ const products = [
   {
     id: 39,
     name: "AQ 1075+",
-    description:
-      "Capacity – 900VA",
+    description: "Capacity – 900VA",
     price: 8100,
     image: a39,
     category: "Inverter",
@@ -455,8 +445,7 @@ const products = [
   {
     id: 40,
     name: "AN 875+",
-    description:
-      "Capacity – 700VA",
+    description: "Capacity – 700VA",
     price: 7200,
     image: a40,
     category: "Inverter",
@@ -464,8 +453,7 @@ const products = [
   {
     id: 41,
     name: "AQ 700+",
-    description:
-      "Capacity – 600VA",
+    description: "Capacity – 600VA",
     price: 5600,
     image: a41,
     category: "Inverter",
@@ -473,8 +461,7 @@ const products = [
   {
     id: 42,
     name: "AMAZE AQ 2375+",
-    description:
-      "Capacity – 2000VA",
+    description: "Capacity – 2000VA",
     price: 16000,
     image: a42,
     category: "Inverter",
@@ -482,8 +469,7 @@ const products = [
   {
     id: 43,
     name: "Amaze AN 11075+",
-    description:
-      "Capacity – 10000VA / 180V",
+    description: "Capacity – 10000VA / 180V",
     price: 104990,
     image: a43,
     category: "Inverter",
@@ -491,8 +477,7 @@ const products = [
   {
     id: 44,
     name: "Amaze AN 9075+",
-    description:
-      "Capacity – 7500VA/120V",
+    description: "Capacity – 7500VA/120V",
     price: 84990,
     image: a44,
     category: "Inverter",
@@ -500,8 +485,7 @@ const products = [
   {
     id: 45,
     name: "Amaze AN 6075+",
-    description:
-      "Capacity – 5500VA/72V",
+    description: "Capacity – 5500VA/72V",
     price: 56990,
     image: a45,
     category: "Inverter",
@@ -509,8 +493,7 @@ const products = [
   {
     id: 46,
     name: "Amaze AN 5075+",
-    description:
-      "Capacity – 4000VA/48V",
+    description: "Capacity – 4000VA/48V",
     price: 39990,
     image: a46,
     category: "Inverter",
@@ -518,8 +501,7 @@ const products = [
   {
     id: 47,
     name: "AMAZE AN 3000+",
-    description:
-      "Capacity – 2800VA / 24V",
+    description: "Capacity – 2800VA / 24V",
     price: 26990,
     image: a47,
     category: "Inverter",
@@ -527,8 +509,7 @@ const products = [
   {
     id: 48,
     name: "Amaze AN STAR 2875",
-    description:
-      "Capacity – 2500VA",
+    description: "Capacity – 2500VA",
     price: 25490,
     image: a48,
     category: "Inverter",
@@ -536,8 +517,7 @@ const products = [
   {
     id: 49,
     name: "AN STAR 4575",
-    description:
-      "Capacity – 400VA/ 48V",
+    description: "Capacity – 400VA/ 48V",
     price: 34990,
     image: a49,
     category: "Inverter",
@@ -545,8 +525,7 @@ const products = [
   {
     id: 50,
     name: "AN STAR 6575",
-    description:
-      "Capacity – 5500VA/72V",
+    description: "Capacity – 5500VA/72V",
     price: 55990,
     image: a50,
     category: "Inverter",
@@ -554,8 +533,7 @@ const products = [
   {
     id: 51,
     name: "AMAZE AN STAR 1475",
-    description:
-      "Capacity – 1100VA / 12V",
+    description: "Capacity – 1100VA / 12V",
     price: 10500,
     image: a51,
     category: "Inverter",
@@ -563,8 +541,7 @@ const products = [
   {
     id: 52,
     name: "AQ Super Charge 1475+",
-    description:
-      "Capacity – 1100VA",
+    description: "Capacity – 1100VA",
     price: 9250,
     image: a52,
     category: "Inverter",
@@ -572,8 +549,7 @@ const products = [
   {
     id: 53,
     name: "AQ Super Charge 1175+",
-    description:
-      "Capacity – 900VA",
+    description: "Capacity – 900VA",
     price: 8850,
     image: a53,
     category: "Inverter",
@@ -581,8 +557,7 @@ const products = [
   {
     id: 54,
     name: "Amaze AQ 1675+",
-    description:
-      "Capacity – 1500VA",
+    description: "Capacity – 1500VA",
     price: 9600,
     image: a54,
     category: "Inverter",
@@ -590,8 +565,7 @@ const products = [
   {
     id: 55,
     name: "Amaze AQ 900+",
-    description:
-      "Capacity – 800VA",
+    description: "Capacity – 800VA",
     price: 6400,
     image: a55,
     category: "Inverter",
@@ -606,334 +580,296 @@ const products = [
   //   category: "UPS",
   // },
   {
-  id: 57,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b1,
-  category: "Battery",
-},
-{
-  id: 58,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b2,
-  category: "UPS",
-},
-{
-  id: 59,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b3,
-  category: "UPS",
-},
-{
-  id: 60,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b4,
-  category: "UPS",
-},
-{
-  id: 61,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b5,
-  category: "UPS",
-},
-{
-  id: 62,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b6,
-  category: "UPS",
-},
-{
-  id: 63,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b7,
-  category: "UPS",
-},
-{
-  id: 64,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b8,
-  category: "UPS",
-},
-{
-  id: 65,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b9,
-  category: "UPS",
-},
-{
-  id: 66,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b10,
-  category: "UPS",
-},
-{
-  id: 67,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b11,
-  category: "UPS",
-},
-{
-  id: 68,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b12,
-  category: "UPS",
-},
-{
-  id: 69,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b13,
-  category: "UPS",
-},
-{
-  id: 70,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b14,
-  category: "UPS",
-},
-{
-  id: 71,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b15,
-  category: "UPS",
-},
-{
-  id: 72,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b16,
-  category: "UPS",
-},
-{
-  id: 73,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b17,
-  category: "UPS",
-},
-{
-  id: 74,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b18,
-  category: "UPS",
-},
-{
-  id: 75,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: b19,
-  category: "UPS",
-},
-{
-  id: 76,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c1,
-  category: "UPS",
-},
-{
-  id: 77,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c2,
-  category: "UPS",
-},
-{
-  id: 78,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c3,
-  category: "UPS",
-},
-{
-  id: 79,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c4,
-  category: "UPS",
-},
-{
-  id: 80,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c5,
-  category: "UPS",
-},
-{
-  id: 81,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c6,
-  category: "UPS",
-},
-{
-  id: 82,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c7,
-  category: "UPS",
-},
-{
-  id: 83,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c8,
-  category: "UPS",
-},
-{
-  id: 84,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c9,
-  category: "UPS",
-},
-{
-  id: 85,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c10,
-  category: "UPS",
-},
-{
-  id: 86,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c11,
-  category: "UPS",
-},
-{
-  id: 87,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c12,
-  category: "UPS",
-},
-{
-  id: 88,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c13,
-  category: "UPS",
-},
-{
-  id: 89,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c14,
-  category: "UPS",
-},
-{
-  id: 90,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: c15,
-  category: "UPS",
-},
-{
-  id: 91,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: ac1,
-  category: "UPS",
-},
-{
-  id: 92,
-  name: "APC Easy UPS | SRV20KUXI-IN",
-  description:
-    "20 KVA Online UPSHigh quality, Double-conversion On-line UPS designed for essential power protection needs even in the most unstable power conditions",
-  price: 299000,
-  image: ac2,
-  category: "UPS",
-},
-
-
+    id: 57,
+    name: "AMAZE 5460TT",
+    description: "Capacity – 250 Ah",
+    price: 29100,
+    image: b1,
+    category: "Battery",
+  },
+  {
+    id: 58,
+    name: "Amaze 5266TT",
+    description: "Capacity – 220 Ah",
+    price: 27100,
+    image: b2,
+    category: "Battery",
+  },
+  {
+    id: 59,
+    name: "Amaze 5260TT",
+    description: "Amaze 5260TT",
+    price: 26100,
+    image: b3,
+    category: "Battery",
+  },
+  {
+    id: 60,
+    name: "Amaze 5060TT",
+    description: "Capacity – 200 Ah",
+    price: 24300,
+    image: b4,
+    category: "Battery",
+  },
+  {
+    id: 61,
+    name: "Amaze 2060TT",
+    description: "Capacity – 150 Ah",
+    price: 18600,
+    image: b5,
+    category: "Battery",
+  },
+  {
+    id: 62,
+    name: "AMAZE 2260TT",
+    description: "Capacity – 160 Ah",
+    price: 18600,
+    image: b6,
+    category: "Battery",
+  },
+  {
+    id: 63,
+    name: "Amaze 2160TT",
+    description: "Capacity – 150 Ah",
+    price: 18600,
+    image: b7,
+    category: "Battery",
+  },
+  {
+    id: 64,
+    name: "AMAZE 2048STJ",
+    description: "Capacity – 150 Ah",
+    price: 18000,
+    image: b8,
+    category: "Battery",
+  },
+  {
+    id: 65,
+    name: "Amaze 2030TT",
+    description: "Capacity – 150 Ah",
+    price: 16600,
+    image: b9,
+    category: "Battery",
+  },
+  {
+    id: 66,
+    name: "Amaze 2042STJ",
+    description: "Capacity – 150 Ah",
+    price: 17800,
+    image: b10,
+    category: "Battery",
+  },
+  {
+    id: 67,
+    name: "AMAZE 1036ST",
+    description: "Capacity – 135 Ah",
+    price: 299000,
+    image: b11,
+    category: "Battery",
+  },
+  {
+    id: 68,
+    name: "2048TT",
+    description: "Capacity – 150 Ah",
+    price: 18600,
+    image: b12,
+    category: "Battery",
+  },
+  {
+    id: 69,
+    name: "AMAZE 936ST",
+    description: "Capacity – 120 Ah",
+    price: 13400,
+    image: b13,
+    category: "Battery",
+  },
+  {
+    id: 70,
+    name: "Amaze 2136TT",
+    description: "Capacity – 150 Ah",
+    price: 17200,
+    image: b14,
+    category: "Battery",
+  },
+  {
+    id: 71,
+    name: "AMAZE 5036TT",
+    description: "Capacity – 200 Ah",
+    price: 21200,
+    image: b15,
+    category: "Battery",
+  },
+  {
+    id: 72,
+    name: "Amaze 842ST",
+    description: "Capacity – 100 Ah",
+    price: 12600,
+    image: b16,
+    category: "Battery",
+  },
+  {
+    id: 73,
+    name: "AMAZE 2042TT",
+    description: "Capacity – 150 Ah",
+    price: 17800,
+    image: b17,
+    category: "Battery",
+  },
+  {
+    id: 74,
+    name: "Amaze 4060TT",
+    description: "Capacity – 180 Ah",
+    price: 22600,
+    image: b18,
+    category: "Battery",
+  },
+  {
+    id: 75,
+    name: "AMAZE 5048TT",
+    description: "Capacity – 200 Ah",
+    price: 29100,
+    image: b19,
+    category: "Battery",
+  },
+  {
+    id: 76,
+    name: "AN 1675+ with Amaze 5266TT",
+    description: "",
+    price: 65000,
+    image: c1,
+    category: "Combo",
+  },
+  {
+    id: 77,
+    name: "AN 1675+ with Amaze 5060TT",
+    description: "",
+    price: 59400,
+    image: c2,
+    category: "Combo",
+  },
+  {
+    id: 78,
+    name: "AN STAR 2375 with AMAZE 2048STJ",
+    description: "",
+    price: 65000,
+    image: c3,
+    category: "Combo",
+  },
+  {
+    id: 79,
+    name: "AN 1575+ with AMAZE 5460TT",
+    description: "",
+    price: 39600,
+    image: c4,
+    category: "Combo",
+  },
+  {
+    id: 80,
+    name: "AN Digital 1475+ with AMAZE 5460TT",
+    description: "",
+    price: 39100,
+    image: c5,
+    category: "Combo",
+  },
+  {
+    id: 81,
+    name: "AN 1575+ with Amaze 5260TT",
+    description: "",
+    price: 36600,
+    image: c6,
+    category: "Combo",
+  },
+  {
+    id: 82,
+    name: "AN 1575+ with Amaze 5060TT",
+    description: "",
+    price: 34800,
+    image: c7,
+    category: "Combo",
+  },
+  {
+    id: 83,
+    name: "AQ 1275+ with Amaze 5060TT",
+    description: "",
+    price: 34300,
+    image: c8,
+    category: "Combo",
+  },
+  {
+    id: 84,
+    name: "AN 1075+ with Amaze 5060TT",
+    description: "",
+    price: 33500,
+    image: c9,
+    category: "Combo",
+  },
+  {
+    id: 85,
+    name: "AN 1575+ with AMAZE 2260TT",
+    description: "",
+    price: 29100,
+    image: c10,
+    category: "Combo",
+  },
+  {
+    id: 86,
+    name: "AQ Super Charge 1475+ with AMAZE 5266TT",
+    description: "",
+    price: 27800,
+    image: c11,
+    category: "Combo",
+  },
+  {
+    id: 87,
+    name: "AN 1075+ with AMAZE 2260TT",
+    description: "",
+    price: 27800,
+    image: c12,
+    category: "Combo",
+  },
+  {
+    id: 88,
+    name: "AN 1075+ with Amaze 2160TT",
+    description: "",
+    price: 27800,
+    image: c13,
+    category: "Combo",
+  },
+  {
+    id: 89,
+    name: "AQ 1075+ with Amaze 2060TT",
+    description: "",
+    price: 27800,
+    image: c14,
+    category: "Combo",
+  },
+  {
+    id: 90,
+    name: "AQ Super Charge 1475+ with Amaze 2160TT",
+    description: "",
+    price: 28600,
+    image: c15,
+    category: "Combo",
+  },
+  {
+    id: 91,
+    name: "AM200L",
+    description: "",
+    price: 2100,
+    image: ac1,
+    category: "Combo",
+  },
+  {
+    id: 92,
+    name: "AM100L",
+    description: "",
+    price: 1700,
+    image: ac2,
+    category: "Combo",
+  },
 ];
 
-const categories = ["All", "UPS", "Inverter", "Battery", "Solar"];
+const categories = ["All", "UPS", "Inverter", "Battery", "Combo"];
 
 const ProductsPage = () => {
   const [activeCategory, setActiveCategory] = useState("All");
