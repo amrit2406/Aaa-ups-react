@@ -10,7 +10,7 @@ import ContactPage from "./pages/Contact";
 import CircuitPage from "./pages/Circuit";
 import SolarSolutionsPage from "./pages/SolarP";
 import PowerLoader from "./components/Loader";
-import ScrollToTop from "./components/Scrolltotop";
+import ScrollToTop from "./components/ScrollTotop";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
